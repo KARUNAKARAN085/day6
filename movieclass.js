@@ -4,6 +4,16 @@ class Movie{
         this.studio=studio,
         this.rating=rating
     }
+    getPG(){
+        if(this.rating=="PG"){
+            return this.rating
+        }
+    }
 }
-const movie = new Movie("Casino Royale","Eon Production","PG13")
-console.log(movie)
+const movie1 = new Movie("Casino Royale","Eon Production","PG13")
+const movie2 = new Movie("Casino Royale","Eon Production","PG")
+const movie3 = new Movie("Casino Royale","Eon Production")
+console.log(movie1)
+console.log(movie1.getPG())
+console.log(movie2.getPG())
+console.log(movie3.getPG())
