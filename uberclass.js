@@ -11,7 +11,7 @@ class Uber{
 }
 const uber =new Uber(10)
 console.log(uber)
-// let consider the cost of uber for 1km=5 
+// let consider the cost of uber for 1km is 5 
 console.log(uber.price())
 uber.setprice=50
 console.log(uber.price())
